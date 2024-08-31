@@ -8,7 +8,7 @@ public class Q1 {
         System.out.println(sb1);
         System.out.println(sb2);
         System.out.println("After concatenation");
-        System.out.println(sb1 + sb2.toString());
+        System.out.println(sb1.toString().concat(sb2.toString()));
     }
 }
 /*
