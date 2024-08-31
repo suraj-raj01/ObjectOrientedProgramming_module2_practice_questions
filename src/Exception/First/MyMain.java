@@ -17,6 +17,7 @@ public class MyMain {
             }
         }catch (Exception e){
             System.out.println("UserDefinedException");
+            System.out.println(e.getMessage());
         }
     }
 }
