@@ -17,8 +17,6 @@ public class Solution7 {
         t1.start();
         t2.start();
         while(t2.isAlive()){
-
-
             try {
                 Thread.sleep(1500);
             } catch (InterruptedException e) {

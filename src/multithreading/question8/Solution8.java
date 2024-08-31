@@ -10,7 +10,7 @@ Create 2 threads t1 and t2 by extending Thread class and print hello and world r
 package multithreading.question8;
 
 public class Solution8 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Thread t1 = new Task1();
         Thread t2 = new Task2();
@@ -19,8 +19,11 @@ public class Solution8 {
         Thread t3 = new Thread(task3);
         Thread t4 = new Thread(task4);
         t1.start();
+        Thread.sleep(500);
         t2.start();
+        Thread.sleep(500);
         t3.start();
+        Thread.sleep(500);
         t4.start();
     }
 }
